@@ -36,7 +36,7 @@
       <h3>Anime / Manga</h3>
       <ul>
         <li v-for="website in anime_boorus">
-          <img :src="`/icons/${website.domain}.png`" :alt="website['name']" class="icon">
+          <img :src="`./icons/${website.domain}.png`" :alt="website['name']" class="icon">
           <a :href="format_search_url(website)">#{{ tag }} on <strong>{{ website["name"] }}</strong></a>
           <span v-if="format_wiki_url(website)">(<a :href="format_wiki_url(website)">wiki</a>)</span>
           <span v-if="website['nsfw']" class="nsfw">NSFW</span>
@@ -47,7 +47,7 @@
       <h3>Furry</h3>
       <ul>
         <li v-for="website in furry_boorus">
-          <img :src="`/icons/${website.domain}.png`" :alt="website['name']" class="icon">
+          <img :src="`./icons/${website.domain}.png`" :alt="website['name']" class="icon">
           <a :href="format_search_url(website)">#{{ tag }} on <strong>{{ website["name"] }}</strong></a>
           <span v-if="format_wiki_url(website)">(<a :href="format_wiki_url(website)">wiki</a>)</span>
           <span v-if="website['nsfw']" class="nsfw">NSFW</span>
@@ -58,7 +58,7 @@
       <h3>General Art</h3>
       <ul>
         <li v-for="website in art_boorus">
-          <img :src="`/icons/${website.domain}.png`" :alt="website['name']" class="icon">
+          <img :src="`./icons/${website.domain}.png`" :alt="website['name']" class="icon">
           <a :href="format_search_url(website)">#{{ tag }} on <strong>{{ website["name"] }}</strong></a>
           <span v-if="format_wiki_url(website)">(<a :href="format_wiki_url(website)">wiki</a>)</span>
           <span v-if="website['nsfw']" class="nsfw">NSFW</span>
@@ -69,7 +69,7 @@
       <h3>Specific Interests</h3>
       <ul>
         <li v-for="website in interest_boorus">
-          <img :src="`/icons/${website.domain}.png`" :alt="website['name']" class="icon">
+          <img :src="`./icons/${website.domain}.png`" :alt="website['name']" class="icon">
           <a :href="format_search_url(website)">#{{ tag }} on <strong>{{ website["name"] }}</strong></a>
           <span v-if="format_wiki_url(website)">(<a :href="format_wiki_url(website)">wiki</a>)</span>
           <span v-if="website['nsfw']" class="nsfw">NSFW</span>
@@ -80,7 +80,7 @@
       <h3>Real</h3>
       <ul>
         <li v-for="website in real_boorus">
-          <img :src="`/icons/${website.domain}.png`" :alt="website['name']" class="icon">
+          <img :src="`./icons/${website.domain}.png`" :alt="website['name']" class="icon">
           <a :href="format_search_url(website)">#{{ tag }} on <strong>{{ website["name"] }}</strong></a>
           <span v-if="format_wiki_url(website)">(<a :href="format_wiki_url(website)">wiki</a>)</span>
           <span v-if="website['nsfw']" class="nsfw">NSFW</span>
