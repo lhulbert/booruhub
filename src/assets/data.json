@@ -1,0 +1,396 @@
+[
+  {
+    "name": "AGNPH",
+    "domain": "agn.ph",
+    "search": "gallery/post/?search=$1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "Anime-Pictures",
+    "domain": "anime-pictures.net",
+    "search": "posts?page=0&search_tag=$1&lang=en",
+    "word_separator": "+",
+    "tag_separator": "&&",
+    "or_separator": "||",
+    "nsfw": false,
+    "category": "anime"
+  },
+  {
+    "name": "Asiachan KPOP",
+    "domain": "kpop.asiachan.com",
+    "search": "$1",
+    "word_separator": "+",
+    "nsfw": false,
+    "category": "real"
+  },
+  {
+    "name": "Blacked Booru",
+    "domain": "blacked.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "CDRR Board",
+    "domain": "zumki.ru",
+    "search": "index.php?q=/post/list/$1/1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "Danbooru",
+    "domain": "danbooru.donmai.us",
+    "wiki": "wiki_pages/$1",
+    "search": "posts?tags=$1",
+    "nsfw": true,
+    "category": "anime"
+  },
+  {
+    "name": "Derpibooru",
+    "domain": "derpibooru.org",
+    "wiki": "tags/$1",
+    "search": "search?q=$1",
+    "word_separator": "+",
+    "tag_separator": ",",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "Draw Friends",
+    "domain": "drawfriends.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "anime"
+  },
+  {
+    "name": "e621",
+    "domain": "e621.net",
+    "wiki": "wiki_pages/show_or_new?title=$1",
+    "search": "posts?tags=$1",
+    "nsfw": true,
+    "category": "furry"
+  },
+  {
+    "name": "e926",
+    "domain": "e926.net",
+    "wiki": "wiki_pages/show_or_new?title=$1",
+    "search": "posts?tags=$1",
+    "nsfw": false,
+    "category": "furry"
+  },
+  {
+    "name": "FANSERVICE.FAN",
+    "domain": "fanservice.fan",
+    "search": "post/list/$1/1",
+    "nsfw": true,
+    "category": "anime"
+  },
+  {
+    "name": "Foot-Fetish-Booru",
+    "domain": "footfetishbooru.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "Furbooru",
+    "domain": "furbooru.org",
+    "wiki": "tags/$1",
+    "search": "search?q=$1",
+    "word_separator": "+",
+    "tag_separator": ",",
+    "nsfw": true,
+    "category": "furry"
+  },
+  {
+    "name": "futabooru",
+    "domain": "futabooru.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "general"
+  },
+  {
+    "name": "Gelbooru",
+    "domain": "gelbooru.com",
+    "wiki": "index.php?page=wiki&s=list&search=$1",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "anime"
+  },
+  {
+    "name": "Gravity Falls",
+    "domain": "gravityfalls.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "hockeybooru",
+    "domain": "hockey.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": false,
+    "category": "real"
+  },
+  {
+    "name": "holobooru",
+    "domain": "holo.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "HypnoHub",
+    "domain": "hypnohub.net",
+    "wiki": "index.php?page=wiki&s=list&search=$1",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "Idol Complex",
+    "domain": "idol.sankakucomplex.com",
+    "search": "en/?tags=$1",
+    "nsfw": true,
+    "category": "real"
+  },
+  {
+    "name": "katawa-shoujo",
+    "domain": "cripple.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "Konachan.com",
+    "domain": "konachan.com",
+    "wiki": "wiki/show?title=$1",
+    "search": "post?tags=$1",
+    "nsfw": true,
+    "category": "anime"
+  },
+  {
+    "name": "Konachan.net",
+    "domain": "konachan.net",
+    "wiki": "wiki/show?title=$1",
+    "search": "post?tags=$1",
+    "nsfw": false,
+    "category": "anime"
+  },
+  {
+    "name": "Little Witch Academia",
+    "domain": "lwa.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "Minitokyo",
+    "domain": "www.minitokyo.net",
+    "protocol": "http",
+    "search": "$1",
+    "word_separator": "+",
+    "nsfw": false,
+    "category": "anime"
+  },
+  {
+    "name": "MSPA Booru",
+    "domain": "mspabooru.com",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": false,
+    "category": "interest"
+  },
+  {
+    "name": "Oceanfalls Booru",
+    "domain": "fanart.oceanfalls.net",
+    "search": "post/list/$1/1",
+    "nsfw": false,
+    "category": "interest"
+  },
+  {
+    "name": "One Yukkuri Place",
+    "domain": "yukkuri.shiteitte.net",
+    "wiki": "wiki_pages/$1",
+    "search": "posts?tags=$1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "Realbooru",
+    "domain": "realbooru.com",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "real"
+  },
+  {
+    "name": "Rule34Hentai",
+    "domain": "rule34hentai.net",
+    "search": "post/list/$1/1",
+    "nsfw": true,
+    "category": "general"
+  },
+  {
+    "name": "Rule34 (Paheal)",
+    "domain": "rule34.paheal.net",
+    "search": "post/list/$1",
+    "nsfw": true,
+    "category": "general"
+  },
+  {
+    "name": "Rule34.xxx",
+    "domain": "rule34.xxx",
+    "wiki": "index.php?page=wiki&s=list&search=$1",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "general"
+  },
+  {
+    "name": "Safebooru (Danbooru)",
+    "domain": "safebooru.donmai.us",
+    "wiki": "wiki_pages/$1",
+    "search": "posts?tags=$1",
+    "nsfw": false,
+    "category": "anime"
+  },
+  {
+    "name": "Safebooru.org",
+    "domain": "safebooru.org",
+    "wiki": "index.php?page=wiki&s=list&search=$1",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": false,
+    "category": "anime"
+  },
+  {
+    "name": "safe furry booru",
+    "domain": "safefurry.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": false,
+    "category": "furry"
+  },
+  {
+    "name": "sakugabooru",
+    "domain": "www.sakugabooru.com",
+    "wiki": "wiki/show?title=$1",
+    "search": "post?tags=$1",
+    "nsfw": false,
+    "category": "anime"
+  },
+  {
+    "name": "Sankaku Channel",
+    "domain": "chan.sankakucomplex.com",
+    "search": "en/posts?tags=cat",
+    "nsfw": true,
+    "category": "anime"
+  },
+  {
+    "name": "Scatbooru",
+    "domain": "scatbooru.co.uk",
+    "search": "?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "Size Booru",
+    "domain": "sizechangebooru.com",
+    "search": "index.php?q=/post/list/$1/1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "Soulcalibooru",
+    "domain": "cascards.fluffyquack.com",
+    "search": "post/list/$1/1",
+    "nsfw": false,
+    "category": "interest"
+  },
+  {
+    "name": "Steam Banners",
+    "domain": "steambanners.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": false,
+    "category": "interest"
+  },
+  {
+    "name": "TentacleRape.net",
+    "domain": "tentaclerape.net",
+    "search": "post/list/$1/1",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "The Big ImageBoard (TBIB)",
+    "domain": "tbib.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "general"
+  },
+  {
+    "name": "The /co/llection",
+    "domain": "the-collection.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "general"
+  },
+  {
+    "name": "The Fur Booru",
+    "domain": "fur.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "furry"
+  },
+  {
+    "name": "The Hentai World",
+    "domain": "thehentaiworld.com",
+    "search": "tag/$1/",
+    "word_separator": "-",
+    "nsfw": true,
+    "category": "anime"
+  },
+  {
+    "name": "Twibooru",
+    "domain": "twibooru.org",
+    "wiki": "tags/$1",
+    "search": "search?q=$1",
+    "word_separator": "+",
+    "tag_separator": ",",
+    "nsfw": true,
+    "category": "interest"
+  },
+  {
+    "name": "Vinebooru",
+    "domain": "booru.vineshroom.net",
+    "wiki": "wiki/$1",
+    "search": "post/list/$1/1",
+    "nsfw": false,
+    "category": "interest"
+  },
+  {
+    "name": "Xbooru",
+    "domain": "xbooru.com",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "general"
+  },
+  {
+    "name": "yande.re",
+    "domain": "yande.re",
+    "wiki": "show?title=$1",
+    "search": "post?tags=$1",
+    "nsfw": true,
+    "category": "anime"
+  },
+  {
+    "name": "zerochan",
+    "domain": "www.zerochan.net",
+    "search": "$1",
+    "word_separator": "+",
+    "nsfw": true
+  },
+  {
+    "name": "ZootopiaBooru",
+    "domain": "zoo.booru.org",
+    "search": "index.php?page=post&s=list&tags=$1",
+    "nsfw": true,
+    "category": "interest"
+  }
+]
