@@ -1,15 +1,26 @@
 <script setup>
-  import { computed } from 'vue'
-  import BooruListing from '@/BooruListing.vue'
+  import { computed, ref } from 'vue';
+  import BooruListing from '@/BooruListing.vue';
   import jsonData from '@/assets/data.json';
 
-  const filterBoorus = (category) => computed(() => 
-    jsonData.filter(website => website.category === category)
-  );
+  const show_nsfw = ref(false);
+  
+  const categories = [
+    { title: "Anime / Manga / General Art", "category": "anime" },
+    { title: "Specific Interests / Real", "category": "interest" },
+    { title: "Furry / MLP / Fetish", "category": "furry" },
+  ];
 
-  const anime_boorus = filterBoorus('anime');
-  const furry_boorus = filterBoorus('furry');
-  const interest_boorus = filterBoorus('interest');
+  const filteredCategories = computed(() =>
+  categories.map((category) => ({
+    title: category.title,
+    filteredBoorus: jsonData.filter(
+      (website) =>
+        website.category === category.category &&
+        (!website.nsfw || show_nsfw.value)
+    ),
+  }))
+);
 
   const urlParams = new URLSearchParams(window.location.search);
   const tag = urlParams.get('tag');
@@ -17,27 +28,13 @@
 
 <template>
   <h2>{{ tag }}</h2>
+  <button v-if="!show_nsfw" @click="show_nsfw = true">Show NSFW</button>
+  <button v-if="show_nsfw" @click="show_nsfw = false">Hide NSFW</button>
   <div class="categories">
-    <div class="category">
-      <h3>Anime / Manga / General Art</h3>
+    <div class="category" v-for="category in filteredCategories" :key="category.title">
+      <h3>{{ category.title }}</h3>
       <ul>
-        <li v-for="website in anime_boorus">
-          <BooruListing :website="website" :tag="tag"></BooruListing>
-        </li>
-      </ul>
-    </div>
-    <div class="category">
-      <h3>Specific Interests / Real</h3>
-      <ul>
-        <li v-for="website in interest_boorus">
-          <BooruListing :website="website" :tag="tag"></BooruListing>
-        </li>
-      </ul>
-    </div>
-    <div class="category">
-      <h3>Furry / MLP / Fetish</h3>
-      <ul>
-        <li v-for="website in furry_boorus">
+        <li v-for="website in category.filteredBoorus" :key="website.domain">
           <BooruListing :website="website" :tag="tag"></BooruListing>
         </li>
       </ul>
@@ -55,6 +52,11 @@
     text-align: center;
   }
 
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+
   .categories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -68,7 +70,6 @@
   }
 
   .category h3 {
-    margin: 0;
     font-size: 1.2em;
     text-align: center;
   }
@@ -82,6 +83,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    border-bottom: solid 1px grey;
   }
 
   .icon {

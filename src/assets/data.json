@@ -462,7 +462,8 @@
     "domain": "www.zerochan.net",
     "search": "$1",
     "word_separator": "+",
-    "nsfw": true
+    "nsfw": true,
+    "category": "anime"
   },
   {
     "name": "ZootopiaBooru",

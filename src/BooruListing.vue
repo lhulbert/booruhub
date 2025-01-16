@@ -13,6 +13,7 @@ defineProps({
 );
 
   function format_search_url(site, tag) {
+    if (site.word_separator) { tag = tag.replaceAll("_", site.word_separator); }
     const protocol = site.protocol || 'https';
     const search = site.search.replace('$1', tag);
     return `${protocol}://${site.domain}/${search}`;
