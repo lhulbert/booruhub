@@ -30,7 +30,7 @@ defineProps({
 <template>
   <img :src="`./icons/${website.domain}.png`" :alt="website['name']" class="icon">
   <a :href="format_search_url(website, tag)">#{{ tag }} on <strong>{{ website["name"] }}</strong></a>
-  <span v-if="format_wiki_url(website, tag)">(<a :href="format_wiki_url(website)">wiki</a>)</span>
+  <span v-if="format_wiki_url(website, tag)">(<a :href="format_wiki_url(website, tag)">wiki</a>)</span>
   <span v-if="website['nsfw']" class="nsfw">NSFW</span>
 </template>
 

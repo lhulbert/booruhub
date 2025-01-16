@@ -1,6 +1,6 @@
 <script setup>
   import { computed } from 'vue'
-  import SiteListing from '@/SiteListing.vue'
+  import BooruListing from '@/BooruListing.vue'
   import jsonData from '@/assets/data.json';
 
   const filterBoorus = (category) => computed(() => 
@@ -22,7 +22,7 @@
       <h3>Anime / Manga / General Art</h3>
       <ul>
         <li v-for="website in anime_boorus">
-          <SiteListing :website="website" :tag="tag"></SiteListing>
+          <BooruListing :website="website" :tag="tag"></BooruListing>
         </li>
       </ul>
     </div>
@@ -30,7 +30,7 @@
       <h3>Specific Interests / Real</h3>
       <ul>
         <li v-for="website in interest_boorus">
-          <SiteListing :website="website" :tag="tag"></SiteListing>
+          <BooruListing :website="website" :tag="tag"></BooruListing>
         </li>
       </ul>
     </div>
@@ -38,7 +38,7 @@
       <h3>Furry / MLP / Fetish</h3>
       <ul>
         <li v-for="website in furry_boorus">
-          <SiteListing :website="website" :tag="tag"></SiteListing>
+          <BooruListing :website="website" :tag="tag"></BooruListing>
         </li>
       </ul>
     </div>
