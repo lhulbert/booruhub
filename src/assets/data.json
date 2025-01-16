@@ -4,7 +4,7 @@
     "domain": "agn.ph",
     "search": "gallery/post/?search=$1",
     "nsfw": true,
-    "category": "interest"
+    "category": "furry"
   },
   {
     "name": "Anime-Pictures",
@@ -22,14 +22,14 @@
     "search": "$1",
     "word_separator": "+",
     "nsfw": false,
-    "category": "real"
+    "category": "interest"
   },
   {
     "name": "Blacked Booru",
     "domain": "blacked.booru.org",
     "search": "index.php?page=post&s=list&tags=$1",
     "nsfw": true,
-    "category": "interest"
+    "category": "furry"
   },
   {
     "name": "CDRR Board",
@@ -54,7 +54,7 @@
     "word_separator": "+",
     "tag_separator": ",",
     "nsfw": true,
-    "category": "interest"
+    "category": "furry"
   },
   {
     "name": "Draw Friends",
@@ -91,7 +91,7 @@
     "domain": "footfetishbooru.booru.org",
     "search": "index.php?page=post&s=list&tags=$1",
     "nsfw": true,
-    "category": "interest"
+    "category": "furry"
   },
   {
     "name": "Furbooru",
@@ -108,7 +108,7 @@
     "domain": "futabooru.booru.org",
     "search": "index.php?page=post&s=list&tags=$1",
     "nsfw": true,
-    "category": "general"
+    "category": "furry"
   },
   {
     "name": "Gelbooru",
@@ -130,7 +130,7 @@
     "domain": "hockey.booru.org",
     "search": "index.php?page=post&s=list&tags=$1",
     "nsfw": false,
-    "category": "real"
+    "category": "interest"
   },
   {
     "name": "holobooru",
@@ -145,14 +145,14 @@
     "wiki": "index.php?page=wiki&s=list&search=$1",
     "search": "index.php?page=post&s=list&tags=$1",
     "nsfw": true,
-    "category": "interest"
+    "category": "furry"
   },
   {
     "name": "Idol Complex",
     "domain": "idol.sankakucomplex.com",
     "search": "en/?tags=$1",
     "nsfw": true,
-    "category": "real"
+    "category": "interest"
   },
   {
     "name": "katawa-shoujo",
@@ -220,21 +220,21 @@
     "domain": "realbooru.com",
     "search": "index.php?page=post&s=list&tags=$1",
     "nsfw": true,
-    "category": "real"
+    "category": "interest"
   },
   {
     "name": "Rule34Hentai",
     "domain": "rule34hentai.net",
     "search": "post/list/$1/1",
     "nsfw": true,
-    "category": "general"
+    "category": "anime"
   },
   {
     "name": "Rule34 (Paheal)",
     "domain": "rule34.paheal.net",
     "search": "post/list/$1",
     "nsfw": true,
-    "category": "general"
+    "category": "anime"
   },
   {
     "name": "Rule34.xxx",
@@ -242,7 +242,7 @@
     "wiki": "index.php?page=wiki&s=list&search=$1",
     "search": "index.php?page=post&s=list&tags=$1",
     "nsfw": true,
-    "category": "general"
+    "category": "anime"
   },
   {
     "name": "Safebooru (Danbooru)",
@@ -287,14 +287,14 @@
     "domain": "scatbooru.co.uk",
     "search": "?page=post&s=list&tags=$1",
     "nsfw": true,
-    "category": "interest"
+    "category": "furry"
   },
   {
     "name": "Size Booru",
     "domain": "sizechangebooru.com",
     "search": "index.php?q=/post/list/$1/1",
     "nsfw": true,
-    "category": "interest"
+    "category": "furry"
   },
   {
     "name": "Soulcalibooru",
@@ -315,21 +315,21 @@
     "domain": "tentaclerape.net",
     "search": "post/list/$1/1",
     "nsfw": true,
-    "category": "interest"
+    "category": "furry"
   },
   {
     "name": "The Big ImageBoard (TBIB)",
     "domain": "tbib.org",
     "search": "index.php?page=post&s=list&tags=$1",
     "nsfw": true,
-    "category": "general"
+    "category": "anime"
   },
   {
     "name": "The /co/llection",
     "domain": "the-collection.booru.org",
     "search": "index.php?page=post&s=list&tags=$1",
     "nsfw": true,
-    "category": "general"
+    "category": "anime"
   },
   {
     "name": "The Fur Booru",
@@ -354,7 +354,7 @@
     "word_separator": "+",
     "tag_separator": ",",
     "nsfw": true,
-    "category": "interest"
+    "category": "furry"
   },
   {
     "name": "Vinebooru",
@@ -369,7 +369,7 @@
     "domain": "xbooru.com",
     "search": "index.php?page=post&s=list&tags=$1",
     "nsfw": true,
-    "category": "general"
+    "category": "anime"
   },
   {
     "name": "yande.re",
